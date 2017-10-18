@@ -1,0 +1,54 @@
+package main
+import "fmt"
+//import "time"
+
+func test(){
+fmt.Println("Hai sa vedem ce face")
+}
+
+func main(){
+var a string = "Teeeeeeest"
+b:="Text"
+i:=1
+
+//var c[10] int
+d:=[10] int {1,2,3,4,5,6,7,8,9,10}
+fmt.Println(d[2:4])
+
+
+fmt.Println(a)
+fmt.Println(b)
+test()
+test1("text")
+
+//for i<=10 {
+//fmt.Println(i)
+//i=i+1
+//} //echivalent while
+
+for i<=100{
+if prim(i)==true {
+fmt.Println(i)}
+i=i+1
+}
+
+}
+
+func test1(a string){
+fmt.Println(a)
+}
+
+func prim(i int)(res bool){
+//det daca i e prim
+ok:=0
+c:=2
+for c<=(i/2){
+if i%c==0 {
+ok=1}
+c=c+1 
+}
+if ok==0 {
+return true } else { 
+return false} 
+}
+
